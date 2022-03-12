@@ -1,6 +1,9 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streamlit-webrtc
 
+
+#https://github.com/whitphx/streamlit-webrtc-example/blob/main/app.py
+
 st.title ("A.I. Gym Trainer 💪")
 st.markdown("Hello there, thank you for using our AI gym trainer program.")
 st.markdown("\nJust like a personal gym trainer, this program helps you keep track of the number of exercise repetition you performed, along with a pose correction feedback mechanism to correct your pose if needed.")
@@ -13,10 +16,6 @@ st.caption("Github link: https://github.com/kailinwng/AI_Gym_Trainer_Python")
 st.header("Instructions:")
 st.subheader("Make sure that you have enabled the camera on your computer before proceeding. 💻")
 
-st.markdown("Hello there, thank you for using our AI gym trainer program.")
-st.markdown("\nJust like a personal gym trainer, this program helps you keep track of the number of exercise repetition you performed, along with a pose correction feedback mechanism to correct your pose if needed.")
-st.markdown("\nAt the end of your exercise, a chart will be displayed to show you your performance throughout the exercise. 📈")
-st.markdown("\nExercises supported: Squats, Arm Curl, Situp")
 
 webrtc_streamer(key="frame")
 
