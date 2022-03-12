@@ -1,4 +1,4 @@
 import streamlit as st
 
 
-st.write(“Hello ,let’s learn how to build a streamlit app together”)
+st.radio("What's your gender?",('Male', 'Female'))
