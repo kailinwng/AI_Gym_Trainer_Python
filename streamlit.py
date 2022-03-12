@@ -14,7 +14,8 @@ st.caption("Note. This is a Monash University final year project completed by Ka
 st.caption("Github link: https://github.com/kailinwng/AI_Gym_Trainer_Python")   
 
 st.header("Instructions:")
-st.markdown("<p color:Red>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>")
+instruction = "<p color:Red>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>"
+st.markdown(instruction, unsafe_allow_html=True)
 
 
 webrtc_streamer(key="frame")
