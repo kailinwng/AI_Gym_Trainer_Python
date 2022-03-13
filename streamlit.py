@@ -23,7 +23,7 @@ st.markdown(instruction, unsafe_allow_html=True)
 exc = st.radio('Pick your exercise:',['Squats','Armcurl','Situp'])
 
 
-webrtc_streamer(key="frame")
+frame = webrtc_streamer(key="webcam")
 
-
+end = st.button("Stop exercise.")
 st.success("You did it!")
