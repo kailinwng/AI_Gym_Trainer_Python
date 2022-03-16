@@ -3,6 +3,9 @@ from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streaml
 
 #https://github.com/whitphx/streamlit-webrtc-example/blob/main/app.py
 
+st.set_page_config(page_title='A.I. Gym Trainer', page_icon="🏋️‍♂️", layout="centered")
+                   #, initial_sidebar_state="auto", menu_items=None)
+
 st.title ("A.I. Gym Trainer 🏋️‍♂️")
 st.markdown("Hello there, thank you for using our AI gym trainer program.")
 st.markdown("\nJust like a personal gym trainer, this program helps you keep track of the number of exercise repetition you performed, along with a pose correction feedback mechanism to correct your pose if needed. ✔️")
