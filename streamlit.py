@@ -19,7 +19,7 @@ st.header("Instructions:")
 instruction = "<p style='color:Red;'>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>"
 st.markdown(instruction, unsafe_allow_html=True)
 
-exc = st.radio('Pick your exercise:', ['Squats','Armcurl','Situp'], help= ['Squats','Armcurl','Situp'])
+exc = st.radio('Pick your exercise:', ['Squats','Armcurl','Situp'])
 
 
 frame = webrtc_streamer(key="webcam")
