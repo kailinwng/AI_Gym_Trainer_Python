@@ -1,10 +1,7 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streamlit-webrtc
 
-
 #https://github.com/whitphx/streamlit-webrtc-example/blob/main/app.py
-
-st.balloons()
 
 st.title ("A.I. Gym Trainer 🏋️‍♂️")
 st.markdown("Hello there, thank you for using our AI gym trainer program.")
@@ -25,5 +22,7 @@ exc = st.radio('Pick your exercise:',['Squats','Armcurl','Situp'])
 
 frame = webrtc_streamer(key="webcam")
 
-end = st.button("Stop exercise.")
-st.success("You did it!")
+if st.button("Stop exercise."):
+  st.balloons()
+  st.success("You did it!")
+  
