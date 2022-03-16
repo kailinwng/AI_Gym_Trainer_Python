@@ -6,7 +6,7 @@ from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streaml
 st.title ("A.I. Gym Trainer 🏋️‍♂️")
 st.markdown("Hello there, thank you for using our AI gym trainer program.")
 st.markdown("\nJust like a personal gym trainer, this program helps you keep track of the number of exercise repetition you performed, along with a pose correction feedback mechanism to correct your pose if needed. ✔️")
-st.markdown("\nAt the end of your exercise, a chart will be displayed to show you your performance throughout the exercise. 📈")
+st.markdown("\nAt the end of your exercise, a chart will display your performance throughout the exercise. 📈")
 
 st.caption("Note. This program is a Monash University final year project completed by Kai Lin Wong, Eu Yang Chai and Kee Hong Tan; under the supervision of Dr Raphael Phan; completed in year 2021.")
 st.caption("This Streamlit app is built by Kai Lin Wong: https://www.linkedin.com/in/kai-lin-wong31/")
