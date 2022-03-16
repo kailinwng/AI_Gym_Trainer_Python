@@ -3,7 +3,11 @@ from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streaml
 
 #https://github.com/whitphx/streamlit-webrtc-example/blob/main/app.py
 
-st.set_page_config(page_title='A.I. Gym Trainer', page_icon="🏋️‍♂️", layout="centered")
+st.set_page_config(page_title='A.I. Gym Trainer', page_icon="🏋️‍♂️", layout="centered",menu_items={
+         #'Get Help': 'https://www.extremelycoolapp.com/help',
+         #'Report a bug': "https://www.extremelycoolapp.com/bug",
+         'About': "This program is a Monash University final year project completed by Kai Lin Wong, Eu Yang Chai and Kee Hong Tan; under the supervision of Dr Raphael Phan; completed in year 2021. \n This Streamlit app is built by Kai Lin Wong: https://www.linkedin.com/in/kai-lin-wong31/ \nGithub link: https://github.com/kailinwng/AI_Gym_Trainer_Python"
+     })
 
 st.title ("A.I. Gym Trainer 🏋️‍♂️")
 st.markdown("Hello there, thank you for using our AI gym trainer program.")
