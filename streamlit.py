@@ -28,12 +28,14 @@ col3.image(gifs[2], width= 200, caption = capt[2])
 st.caption("\nNote: Bicep curls must be done with both arms performing the same motion together.")
 
 st.header("Let's Begin! 💦")
-
 exc = st.radio('Pick your exercise:', ['Squats','Situp','Bicep curl'])
 
 cam = "<p style='color:Red;'>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>"
 st.markdown(cam, unsafe_allow_html=True)
+
 frame = webrtc_streamer(key="webcam")
+
+st.metric(label="Reps", value="0", delta="1")
 
 if st.button("Stop exercise."):
   st.balloons()
