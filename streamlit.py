@@ -35,7 +35,7 @@ st.markdown(cam, unsafe_allow_html=True)
 
 frame = webrtc_streamer(key="webcam")
 
-st.metric(label="Reps", value="0", delta="1")
+st.metric(label="Reps Per Hour", value="0", delta="1")
 
 if st.button("Stop exercise."):
   st.balloons()
