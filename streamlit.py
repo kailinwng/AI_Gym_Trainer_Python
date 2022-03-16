@@ -17,8 +17,8 @@ st.header("Instructions:")
 instruction = "<p style='color:Red;'>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>"
 st.markdown(instruction, unsafe_allow_html=True)
 
-exc_text = ['https://images.squarespace-cdn.com/content/v1/54f9e84de4b0d13f30bba4cb/1530742878727-5TT9N6GWHG8SQUPVO1WQ/ke17ZwdGBToddI8pDm48kMh3mVmBaCAeGwqCLG3iONRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIBW4H-Ca6AoigG7Ta8YXcF_lHpbhrmZNZWbxxrH_bJLk/bodyweight+squat.gif', 'hi', 'bye']
-exc = st.radio('Pick your exercise:', ['Squats','Armcurl','Situp'], help= exc_text)
+#exc_text = ['https://images.squarespace-cdn.com/content/v1/54f9e84de4b0d13f30bba4cb/1530742878727-5TT9N6GWHG8SQUPVO1WQ/ke17ZwdGBToddI8pDm48kMh3mVmBaCAeGwqCLG3iONRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIBW4H-Ca6AoigG7Ta8YXcF_lHpbhrmZNZWbxxrH_bJLk/bodyweight+squat.gif', 'hi', 'bye']
+exc = st.radio('Pick your exercise:', ['Squats','Armcurl','Situp'], help= ['Squats','Armcurl','Situp'])
 
 
 frame = webrtc_streamer(key="webcam")
