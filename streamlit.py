@@ -24,6 +24,11 @@ capt = ['Squats','Situp','Bicep curl']
 st.image(gifs, width= 200, caption = capt)
 st.caption("\nNote: Bicep curls must be done with both arms performing the same motion together.")
 
+col1, col2, col3 = st.columns(3)
+col1.image(gifs[0], width= 200, caption = capt[0])
+col2.image(gifs[1], width= 200, caption = capt[1])
+col3.image(gifs[2], width= 200, caption = capt[2])
+
 st.header("Let's Begin! 💦")
 
 exc = st.radio('Pick your exercise:', ['Squats','Situp','Bicep curl'])
