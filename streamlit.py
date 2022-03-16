@@ -16,14 +16,15 @@ st.markdown("\nExercises supported: ")
 gifs = ['https://images.squarespace-cdn.com/content/v1/54f9e84de4b0d13f30bba4cb/1530742878727-5TT9N6GWHG8SQUPVO1WQ/ke17ZwdGBToddI8pDm48kMh3mVmBaCAeGwqCLG3iONRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIBW4H-Ca6AoigG7Ta8YXcF_lHpbhrmZNZWbxxrH_bJLk/bodyweight+squat.gif',"https://www.spotebi.com/wp-content/uploads/2014/10/biceps-curl-exercise-illustration.gif","https://media1.tenor.com/images/c6e16a9b9dc7d97b0d4ad78b50e7b424/tenor.gif?itemid=3579635"]
 capt = ['Squats','Bicep curl','Situp']
 st.image(gifs, width= 200, caption = capt)
-st.markdown("\nNote: Bicep curls must be performed with both hands together.")
+st.markdown("\nNote: Bicep curls must be done with both arms performing the same motion together.")
 
-st.header("Let's begin!")
+begin = "<p style='color:green;'>Let's Begin! 💦</p>"
+st.header(begin, unsafe_allow_html=True)
 
 exc = st.radio('Pick your exercise:', ['Squats','Bicep curl','Situp'])
 
-instruction = "<p style='color:Red;'>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>"
-st.markdown(instruction, unsafe_allow_html=True)
+cam = "<p style='color:Red;'>Make sure that you have enabled the camera on your computer before proceeding! 💻</p>"
+st.markdown(cam, unsafe_allow_html=True)
 frame = webrtc_streamer(key="webcam")
 
 if st.button("Stop exercise."):
