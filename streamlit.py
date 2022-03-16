@@ -18,7 +18,7 @@ capt = ['Squats','Bicep curl','Situp']
 st.image(gifs, width= 200, caption = capt)
 st.markdown("\nNote: Bicep curls must be done with both arms performing the same motion together.")
 
-st.header("Let's Begin! 💦", unsafe_allow_html=True)
+st.header("Let's Begin! 💦")
 
 exc = st.radio('Pick your exercise:', ['Squats','Bicep curl','Situp'])
 
