@@ -1,6 +1,16 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streamlit-webrtc
 
+import mediapipe as mp
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# draw landmarks & connections to screen
+mp_drawing = mp.solutions.drawing_utils
+# import Pose model
+mp_pose = mp.solutions.pose
+
 #https://github.com/whitphx/streamlit-webrtc-example/blob/main/app.py
 
 st.set_page_config(page_title='A.I. Gym Trainer', page_icon="🏋️‍♂️", layout="centered",menu_items={
@@ -36,6 +46,7 @@ st.markdown(cam, unsafe_allow_html=True)
 frame = webrtc_streamer(key="webcam")
 
 st.metric(label="Reps Per Hour", value="0", delta="1")
+st.metric(label="Calories Burned", value="0", delta="1")
 
 if st.button("Stop exercise."):
   st.balloons()
