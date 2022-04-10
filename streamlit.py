@@ -5,6 +5,7 @@ from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streaml
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import mediapipe
 
 # draw landmarks & connections to screen
 #mp_drawing = mp.solutions.drawing_utils
